@@ -1,4 +1,5 @@
 let inventory = document.createElement('div')
+// game
 function newImage(url, left, bottom){
   let object = document.createElement('img')
   object.src = url
@@ -12,7 +13,7 @@ function newImage(url, left, bottom){
 function newItem(url, left, bottom){
   let item = newImage(url, left, bottom)
 }
-
+//inventory slot
 function newItem(url, left, bottom){
   let item = newImage(url, left, bottom)
   item.addEventListener('click', function(){
@@ -26,7 +27,7 @@ function newItem(url, left, bottom){
 
 
 
-
+//inventory machine
 function newInventory(){
  
   inventory.style.position = 'fixed'
@@ -46,7 +47,7 @@ function newInventory(){
 
 
 
-
+// arguments
 newInventory()
 newImage('assets/green-character.gif', 100, 250)
 newImage('assets/tree.png', 200, 450)
